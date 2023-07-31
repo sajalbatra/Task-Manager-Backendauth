@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+/* Setting the variable */
+:root {
+  --gradient: linear-gradient(45deg,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background: var(--gradient);
+  background-size: 250%;
+  animation: bg-animations 7s infinite alternate;
+  width: 1440px;
+height: 1024px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+@keyframes bg-animations {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bgdeskimage{
+width: 587px;
+height: 452px;
+border-radius: 226px;
+margin-top:  200px;
+margin-bottom:  239px;
+margin-left:  1000px;
+margin-right: 25px;
 }

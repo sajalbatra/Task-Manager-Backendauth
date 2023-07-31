@@ -1,0 +1,74 @@
+/* Styles for the .home container */
+.home {
+  width: 428px;
+  height: 926px;
+  flex-shrink: 0;
+  background: #212832;
+  position: absolute;
+  left: 151px;
+  top: 49px;
+  display: flex;
+  flex-direction: column;
+  bottom: 49px;
+}
+.p1 {
+  color: #fff;
+  font-family: "Pilat Extended";
+  font-size: 16.26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.304px;
+  right: 1169px;
+  top: 118.11px;
+  background: transparent;
+  padding-left: 41px;
+  margin-top: -1px;
+}
+.p2 {
+  background: transparent;
+  color: #fed36a;
+}
+.home .img {
+  width: 61.034px;
+  height: 47.76px;
+  left: 192.92px;
+  top: 72px;
+  padding-top: 23px;
+  padding-left: 41.92px;
+  padding-bottom: -22px;
+
+}
+.Bodytext {
+  color: #fff;
+  font-family: Pilat Extended;
+  font-size: 61px;
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 21px;
+  margin-bottom: 181px;
+}
+.Bodytext span {
+  color: #fed36a;  
+}
+.bgimage{
+  margin-left: 50.99px;
+ 
+  margin-right: 56px;
+}
+.startbutton{
+  width: 376px;
+height: 67px;
+background: #FED36A;
+margin: -100px 26px 0px 26px;
+bottom: 50px;
+left: 147px;
+cursor: pointer;
+}
+.startbutton span{
+  color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 38px; /* 211.111% */
+}
