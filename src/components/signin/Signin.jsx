@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import clockimg from '../../assests/bro.png'
 import "./signin.css";
 import Form from './Form';
-const Login = () => {
+const Signin = () => {
   return (
     <div className='home'>
     <div className='logoflex'>
@@ -12,9 +13,12 @@ const Login = () => {
     <p className='Create_your_account'>Welcome Back!</p>
     <Form/>
     <p className='or'>OR</p>
-    <p className='have_an_account'>Don't have an account?<span>Sign Up</span> </p>
-    </div>
+    <p className='have_an_account'>
+        Don't have an account?{' '}
+        <Link to='/login' className='Link'><span>Sign Up</span></Link>
+      </p>
+    </div>   
   )
 }
 
-export default Login
+export default Signin

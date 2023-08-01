@@ -51,13 +51,14 @@
     color: #8caab9;
     text-align: center;
     font-family: Inter;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
   }
   .have_an_account span {
     color: #fed36a;
     cursor: pointer;
+    
   }
   .or{
     color: #8CAAB9;
@@ -68,4 +69,9 @@
     font-weight: 500;
     margin-top: 60px;
  }
+  .link {
+  text-decoration: none;
+  color: #fed36a;
+    cursor: pointer;
   
+}

@@ -1,5 +1,5 @@
 import './App.css';
-import {Home,Login, Signin} from "./components/component";
+import {Home,Login, Signin,Task} from "./components/component";
 import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import bgImage from './assests/bgimg.png'
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/signin' element={<Signin/>}/>
+      <Route path='/daytask' element={<Task/>}/>
     </Routes>
     </Router>
     

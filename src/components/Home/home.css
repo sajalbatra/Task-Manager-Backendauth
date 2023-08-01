@@ -71,3 +71,29 @@ font-style: normal;
 font-weight: 600;
 line-height: 38px; /* 211.111% */
 }
+/* CSS FOR TASK MANAGER */
+.taskmanager{
+  width: 390px;
+  height: 640px;
+  border-radius: 30px;
+  background: linear-gradient(to right bottom, #807e7e 1%, #000000 90%);
+  margin: 80px 16px 0px 20px ;
+
+}
+.daytask{
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 2px;
+}
+li{
+  color: rgba(255, 255, 255, 0.90);
+font-family: Calibri;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

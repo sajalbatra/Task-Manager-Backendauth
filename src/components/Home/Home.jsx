@@ -1,11 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./home.css"
 import clock from '../../assests/bro.png'
 import bgimage from '../../Colours/1.svg'
-const ButtonClick=()=>{
-  console.log("button working");
-} 
+
 const Home = () => {
+  const navigate = useNavigate();
+  const ButtonClick=()=>{
+    navigate('/signin');
+    console.log("button working");
+  } 
   return (
     <div className='home'>
     <img className='img' src={clock} alt=''/>
@@ -17,7 +21,9 @@ const Home = () => {
       Task with 
       <span>DayTask</span>
     </p>
-      <button class="startbutton" onClick={ButtonClick}><span>Let's Start</span></button>
+    
+      <button className="startbutton" onClick={ButtonClick}><span>Let's Start</span></button>
+    
     </div>
   )
 }

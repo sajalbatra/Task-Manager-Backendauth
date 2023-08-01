@@ -1,5 +1,6 @@
 import React from 'react'
 import clockimg from '../../assests/bro.png'
+import { Link } from 'react-router-dom';
 import "./login.css";
 import Form from './Form';
 const Login = () => {
@@ -11,7 +12,7 @@ const Login = () => {
     </div>
     <p className='Create_your_account'>Create Your Account</p>
     <Form/>
-    <p className='have_an_account'>Already have an account?<span>Log In</span> </p>
+    <p className='have_an_account'>Already have an account?<Link to='/signin'><span>Log In</span></Link></p>
     </div>
   )
 }
