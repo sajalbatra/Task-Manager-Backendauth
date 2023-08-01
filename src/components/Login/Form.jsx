@@ -41,23 +41,23 @@ const Form = () => {
       {/* Form inputs */}
       <label>
         Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange} />
+        <input type="text" name="name" required value={formData.name} onChange={handleChange} />
       </label>
       <label>
         Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        <input type="email" name="email" required value={formData.email} onChange={handleChange} />
       </label>
       <label>
         Password:
-        <input type="password" name="password" value={formData.password} onChange={handleChange} />
+        <input type="password" name="password" required value={formData.password} onChange={handleChange} />
       </label>
 
       {/* Submit button */}
       <p className='terms'>
         <input type="checkbox" className="check" />
-        I have read & agreed to DayTask <span>Privacy Policy, Terms & Condition</span>
+        I have read & agreed to DayTask&nbsp;<span>Privacy Policy, Terms & Condition</span>
       </p>
-      <button className="startbutton"><span>Sign Up</span></button>
+      <button className="signbutton"><span>Sign Up</span></button>
     </form>
   );
 };

@@ -5,10 +5,10 @@
 
 body {
   background: var(--gradient);
-  background-size: 250%;
-  animation: bg-animations 7s infinite alternate;
-  width: 1440px;
-height: 1024px;
+  background-size: 550%;
+  animation: bg-animations 5s infinite alternate;
+  background-repeat: no-repeat;
+  min-height: 100dvh
 
 }
 @keyframes bg-animations {
@@ -20,11 +20,11 @@ height: 1024px;
   }
 }
 .bgdeskimage{
-width: 587px;
-height: 452px;
+width: 450px;
+height: 350px;
 border-radius: 226px;
 margin-top:  200px;
 margin-bottom:  239px;
-margin-left:  1000px;
+margin-left:  700px;
 margin-right: 25px;
 }

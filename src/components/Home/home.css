@@ -1,15 +1,15 @@
 /* Styles for the .home container */
 .home {
   width: 428px;
-  height: 926px;
+  height: 808px;
   flex-shrink: 0;
   background: #212832;
   position: absolute;
-  left: 151px;
-  top: 49px;
+  top: 0px;
+  left: 90px;
   display: flex;
   flex-direction: column;
-  bottom: 49px;
+  
 }
 .p1 {
   color: #fff;
@@ -25,7 +25,6 @@
   margin-top: -1px;
 }
 .p2 {
-  background: transparent;
   color: #fed36a;
 }
 .home .img {
@@ -56,10 +55,10 @@
   margin-right: 56px;
 }
 .startbutton{
-  width: 376px;
+width: 376px;
 height: 67px;
 background: #FED36A;
-margin: -100px 26px 0px 26px;
+margin: -160px 26px 0px 26px;
 bottom: 50px;
 left: 147px;
 cursor: pointer;
