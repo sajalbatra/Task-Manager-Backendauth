@@ -1,7 +1,13 @@
 import { React, useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./form.css";
 
 const Form = () => {
+  const navigate = useNavigate();
+  const loginClick=()=>{
+    navigate('/daytask');
+    console.log("button working");
+  }
   const initialFormData = useMemo(() => ({
     name: '',
     email: '',
@@ -57,7 +63,7 @@ const Form = () => {
         <input type="checkbox" className="check" />
         I have read & agreed to DayTask&nbsp;<span>Privacy Policy, Terms & Condition</span>
       </p>
-      <button className="signbutton"><span>Sign Up</span></button>
+      <button className="signbutton" onClick={loginClick}><span>Sign Up</span></button>
     </form>
   );
 };

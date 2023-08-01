@@ -1,8 +1,7 @@
 
-input[type="text"]
-{
+input[type="textarea"]{
   width: 130px;
-  height: 25px;
+  height: 40px;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.6);
   margin-right: 10px;

@@ -22,8 +22,8 @@ const TaskForm = ({ onAddTask }) => {
   return (
     <div className='flexing'>
       <input
-        className='addtaskform'
-        type="text"
+        className='inputtask'
+        type="textarea"
         placeholder="Enter your task..."
         value={taskText}
         onChange={(e) => setTaskText(e.target.value)}

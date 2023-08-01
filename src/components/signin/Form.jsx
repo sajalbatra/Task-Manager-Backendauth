@@ -1,7 +1,13 @@
-import { React, useState, useEffect, useMemo } from 'react';
+import { React, useState, useEffect, useMemo} from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./form.css";
 
 const Form = () => {
+  const navigate = useNavigate();
+  const signClick=()=>{
+    navigate('/daytask');
+    console.log("button working");
+  } 
   const initialFormData = useMemo(() => ({
     email: '',
     password: '',
@@ -48,7 +54,7 @@ const Form = () => {
       </label>
 
       {/* Submit button */}
-      <button className="signbutton"><span>Log In</span></button>
+      <button className="signbutton" onClick={signClick}><span>Log In</span></button>
     </form>
   );
 };
