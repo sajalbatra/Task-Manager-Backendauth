@@ -22,7 +22,7 @@ app.post('/signup', Signup_user);
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     // listen for requests
-    app.listen(process.env.PORT, () => {
+    app.listen(process.env.PORT || 3000, () => {
       console.log('Connected to db & listening on port', process.env.PORT);
     });
   })
