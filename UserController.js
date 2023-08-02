@@ -18,28 +18,28 @@ const Signup_user = async (req, res) => {
   }
 };
 
-// Login user
-// const Login_user = async (req, res) => {
-//   try {
-//     const user = await User.findOne({
-//       email: req.body.email,
-//       password: req.body.password,
-//     });
 
-//     if (!user) {
-//       res.status(404).json({ msg: 'User not found' });
-//     } else {
-//       console.log('Existing user:', user);
-//       res.json({ msg: 'Login successful', user });
-//     }
-//   } catch (error) {
-//     console.error('Error finding user:', error);
-//     res.status(500).json({ msg: 'Error finding user' });
-//   }
-// };
+const Login_user = async (req, res) => {
+  try {
+    const user = await User.findOne({
+      email: req.body.email,
+      password: req.body.password,
+    });
 
-// const Task = async (req, res) =>{
+    if (!user) {
+      res.status(404).json({ msg: 'User not found' });
+    } else {
+      console.log('Existing user:', user);
+      res.json({ msg: 'Login successful', user });
+    }
+  } catch (error) {
+    console.error('Error finding user:', error);
+    res.status(500).json({ msg: 'Error finding user' });
+  }
+};
 
-// }
+const Task = async (req, res) =>{
+
+}
 
 module.exports = { Signup_user, Login_user };
