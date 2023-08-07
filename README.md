@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# To-Do List Application - Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the backend part of the To-Do List application, which provides the server-side logic and handles data storage and authentication. The backend is built using the MERN stack, which stands for MongoDB, Express.js, React.js, and Node.js.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- MongoDB: A NoSQL database used to store user information and task data.
+- Express.js: A backend web application framework for Node.js used to build the server-side logic.
+- Node.js: A JavaScript runtime used for server-side development.
+- Mongoose: A MongoDB object modeling tool for Node.js, used to interact with the MongoDB database.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before running the backend, ensure you have the following software installed on your system:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Node.js: You can download Node.js from the official website: https://nodejs.org/
+2. MongoDB: Install MongoDB Community Edition: https://www.mongodb.com/try/download/community
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine:
 
-### `npm run build`
+```bash
+git clone <repository_url.git>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the backend directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd to-do-list-application/backend
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Create a `.env` file in the backend directory and add the following environment variables:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+MONGODB_URI=<your_mongodb_connection_string>
+SESSION_SECRET=<your_session_secret_key>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Replace `<your_mongodb_connection_string>` with your MongoDB database connection string, and `<your_session_secret_key>` with a secret key for session management.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running the Backend
 
-## Learn More
+To start the backend server, run the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will start the server on `http://localhost:5000`.
 
-### Code Splitting
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The backend provides the following API endpoints:
 
-### Analyzing the Bundle Size
+- `POST /api/auth/signup`: Used for user registration.
+- `POST /api/auth/login`: Used for user login and authentication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+If you want to contribute to this project, you are welcome to submit pull requests. Please ensure that your changes are well-documented and tested.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Thanks to the MERN stack community for providing excellent tools and resources.
+- Thanks to all the contributors who helped make this project better.
